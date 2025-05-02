@@ -1,7 +1,7 @@
-const jwt = require('jwt')
+const jwt = require('jsonwebtoken')
 const bcrypt = requier('bcryptjs')
 const asyncHandler = require('express-async-handler')
-const User = require('../models/usersModel')
+const User = require('../models/usersModels')
 const { urlencoded } = require('express')
 
 const login = asyncHandler (async (req, res) => {

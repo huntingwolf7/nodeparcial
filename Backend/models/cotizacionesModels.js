@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const userSchema = mongoose.Schema({
+const cotizacionSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, "Por favor agregue su nombre"],
@@ -19,4 +19,4 @@ const userSchema = mongoose.Schema({
     timestamps : true
 })
 
-module.exports = mongoose.model('Cotizacion', CotizacionSchema)
+module.exports = mongoose.model('Cotizacion', cotizacionSchema)

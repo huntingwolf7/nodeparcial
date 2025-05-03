@@ -79,10 +79,10 @@ const deleteUsers = asyncHandler( async(req, res) => {
 })
 
 module.exports = {
-    getTareas,
-    createTareas, 
-    updateTareas, 
-    deleteTareas
+    getUsers,
+    createUsers, 
+    updateUsers, 
+    deleteUsers
 }
 
 module.exports = {

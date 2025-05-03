@@ -26,7 +26,7 @@ const createCotizaciones = asyncHandler( async(req, res) => {
             throw new Error('No se encontró la cotización')
         }
         
-        const cotizacionUpdated = await Tarea.findByIdAndUpdate(req.params.id, req.body, {
+        const cotizacionUpdated = await Cotizacion.findByIdAndUpdate(req.params.id, req.body, {
             new:true,
         });
     

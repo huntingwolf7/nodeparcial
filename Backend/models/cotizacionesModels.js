@@ -4,7 +4,6 @@ const cotizacionSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, "Por favor agregue su nombre"],
-        unique: true
     },
     email: {
         type: String,

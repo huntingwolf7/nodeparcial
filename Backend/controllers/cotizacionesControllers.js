@@ -13,7 +13,10 @@ const createCotizaciones = asyncHandler( async(req, res) => {
         }
     
         const cotizacion = await Cotizacion.create({
+            name: req.body.name,
+            email: req.body.email,
             texto: req.body.texto
+            
         })
         res.status(201).json({cotizacion})
     })

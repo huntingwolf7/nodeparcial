@@ -18,4 +18,4 @@ const cotizacionSchema = mongoose.Schema({
     timestamps : true
 })
 
-module.exports = mongoose.model('Cotizacion', cotizacionSchema, cotizacions)
+module.exports = mongoose.model('Cotizacion', cotizacionSchema)
